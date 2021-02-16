@@ -1,1 +1,1 @@
-https://github.com/sumantopal/ER_Diagram-_Assignment
+https://github.com/sumantoAccolite/ER_Diagram-_Assignment
