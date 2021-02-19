@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "c2b5b647-e375-4f54-ac8e-5c33bdf0e897",
+		"name": "FootBall",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ADD PLAYER INFO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Harry Kane\",\n    \"goals\" : \"12\",\n    \"id\": \"7\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/football",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"football"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10+ Goals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/football/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"football",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

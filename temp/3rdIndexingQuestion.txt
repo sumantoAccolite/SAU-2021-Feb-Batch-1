@@ -1,0 +1,12 @@
+syntax to add index : create index couchbasedemo on couchbasedemo(id);
+delete index : drop primary index on couchbasedemo;
+
+
+In Movie Document: 
+	--> Its better to have cities field Indexed because it will help in better grouping
+	    because of  limited cities
+
+In Football Document: 
+	--> Its better to have Goals field Indexed because it will help in better grouping
+	    because of limitation of number of goals scored lies between 0 - 30 per year.
+
