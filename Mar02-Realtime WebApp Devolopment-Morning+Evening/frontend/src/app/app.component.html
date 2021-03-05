@@ -1,0 +1,41 @@
+
+<div style="padding: 2%; margin: auto;">
+
+<h3 style="font-weight: bold;">Review</h3>
+<label style="font-size: medium;" >UserName : </label>
+<input style="padding: 1% " type="text" id = "session-name" [(ngModel)] = "SessionName" ><br/><br/>
+<label style="font-size: medium" >Rating : </label>
+<input style="padding: 1% "  id = "instructor-name" type="text" [(ngModel)] = "InstructorName"><br/><br/>
+<label style="font-size: medium;">FeedBack: </label>
+<input style="padding: 1% " id = "description"  type="textarea" [(ngModel)] = "Description"><br/><br/>
+
+<button mat-raised-button color="primary"   (click)="AddtoDetails()">Submit</button>
+
+<!-- <div [(ngModel)] = "0">
+  <button mat-raised-button color="primary" class = "ng-hide"  (click)="AddtoDetails()">Update</button>
+</div> -->
+
+</div>
+
+<div class = "container" style="padding: 3%;">
+
+  <div *ngFor = "let row of array ; let index_of_element = index">
+
+  
+  <mat-card style="padding: 2%;">
+    <mat-card-title>{{row["session-name"]}}</mat-card-title>
+    <mat-card-subtitle>{{row["trainer-name"]}}</mat-card-subtitle>
+    <mat-card-content>{{row["description"]}}</mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click) = "deleteDetails(index_of_element)">Delete</button>
+
+      <button mat-raised-button color="primary" (click) = "UpdateDetails(index_of_element)">Update</button>
+
+    </mat-card-actions>
+  </mat-card>
+</div>
+</div>
+    
+
+  
+
